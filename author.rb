@@ -7,7 +7,7 @@ class Author
     end
 
     def self.all
-        @@all
+        @@all 
     end
 
     def books
