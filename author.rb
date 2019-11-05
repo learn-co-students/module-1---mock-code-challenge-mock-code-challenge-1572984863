@@ -36,7 +36,7 @@ class Author
             new_hash[author_instance] = author_instance_books.sum { |instance| instance.word_count }
         end 
 
-        new_hash.max_by { |key, value| value }
+        new_hash.max_by { |key, value| value }.first
 
         # new_hash.each do |key, value|
         #     if value > highest_word_count
